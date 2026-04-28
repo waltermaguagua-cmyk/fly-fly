@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #15224b 0, #050914 55%, #020308 100%);
+  color: #e8eeff;
+}
+
+.app {
+  text-align: center;
+  width: min(92vw, 540px);
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.tip {
+  margin-top: 0;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+canvas {
+  border: 2px solid #93a8ff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 480px;
+  background: linear-gradient(180deg, #0f1638, #040711 60%, #02040a);
+  box-shadow: 0 0 24px rgba(87, 125, 255, 0.3);
+}
+
+.hud {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.1rem;
+  font-size: 1.02rem;
+}
+
+.actions {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.58rem 1rem;
+  background: #4f74ff;
+  color: white;
+  font-size: 0.98rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6a8bff;
+}
+
+@media (max-width: 500px) {
+  .tip {
+    font-size: 0.92rem;
+  }
+
+  .hud {
+    font-size: 0.95rem;
+  }
+}

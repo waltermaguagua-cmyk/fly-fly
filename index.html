@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太空射击游戏</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>🚀 太空射击游戏</h1>
+      <p class="tip">方向键/WASD移动，空格发射，P 暂停，别被陨石击中！</p>
+      <canvas id="game" width="480" height="720" aria-label="太空射击游戏画布"></canvas>
+      <section class="hud" aria-live="polite">
+        <span>得分：<strong id="score">0</strong></span>
+        <span>生命：<strong id="lives">3</strong></span>
+        <span>等级：<strong id="level">1</strong></span>
+        <span>最高分：<strong id="best">0</strong></span>
+      </section>
+      <section class="actions">
+        <button id="pause">暂停</button>
+        <button id="restart" hidden>重新开始</button>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
